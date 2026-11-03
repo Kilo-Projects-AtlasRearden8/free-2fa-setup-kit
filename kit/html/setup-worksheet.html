@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>2FA Setup Worksheet — Free 2FA Setup Kit</title>
+<style>
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #f5f7fa;
+  color: #1a202c;
+  line-height: 1.55;
+  margin: 0;
+  padding: 24px;
+}
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 32px 40px;
+}
+header {
+  border-bottom: 2px solid #cbd5e1;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+h1 {
+  font-size: 22px;
+  margin: 0 0 4px 0;
+  color: #0f172a;
+}
+.subtitle {
+  color: #475569;
+  font-size: 13px;
+  margin: 0;
+}
+h2 {
+  font-size: 17px;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  color: #0f172a;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 6px;
+}
+p {
+  margin: 0 0 12px 0;
+}
+ul {
+  margin: 6px 0 14px 0;
+  padding-left: 22px;
+}
+li {
+  margin-bottom: 6px;
+}
+ol {
+  margin: 6px 0 16px 0;
+  padding-left: 22px;
+}
+li {
+  margin-bottom: 8px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0 20px 0;
+  font-size: 13px;
+}
+th, td {
+  border: 1px solid #cbd5e1;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  background: #f1f5f9;
+  font-weight: 600;
+  color: #334155;
+}
+tr:nth-child(even) td {
+  background: #f8fafc;
+}
+td.blank {
+  min-height: 30px;
+}
+.checkbox {
+  font-size: 20px;
+  line-height: 1;
+  margin-right: 8px;
+}
+.fill-in {
+  display: inline-block;
+  border-bottom: 1px solid #94a3b8;
+  min-width: 200px;
+  padding-bottom: 2px;
+  margin-right: 12px;
+}
+.fill-in input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font: inherit;
+  outline: none;
+}
+.fill-in input::placeholder {
+  color: #cbd5e1;
+}
+.notice {
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+footer {
+  margin-top: 34px;
+  padding-top: 16px;
+  border-top: 1px solid #e2e8f0;
+  font-size: 12px;
+  color: #64748b;
+}
+.no-print {
+  margin-top: 26px;
+}
+@media print {
+  body {
+    background: #ffffff;
+    padding: 0;
+  }
+  .page {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    max-width: none;
+  }
+  header {
+    border-bottom: none;
+    padding-bottom: 8px;
+    margin-bottom: 18px;
+  }
+  .no-print {
+    display: none !important;
+  }
+  table, tr {
+    page-break-inside: avoid;
+  }
+  h2 {
+    page-break-after: avoid;
+  }
+  a {
+    color: #1a202c;
+    text-decoration: none;
+  }
+}
+</style>
+</head>
+<body>
+<div class="page">
+<header>
+<h1>Two-Factor Authentication Setup Worksheet</h1>
+<p class="subtitle">One worksheet per account &bull; Printable, privacy-first, no account needed &bull; Asdale Dynamics, LLC</p>
+</header>
+
+<div class="notice"><strong>Privacy note:</strong> This sheet asks for account details. Keep it somewhere safe and private. Do not store passwords or recovery codes in unencrypted email or notes.</div>
+
+<h2>Account information</h2>
+<table>
+<tr><th style="width: 34%">Field</th><td class="blank">Service or website</td></tr>
+<tr><th>Account email or username</th><td class="blank"></td></tr>
+<tr><th>Date 2FA was set up</th><td class="blank"></td></tr>
+<tr><th>Authenticator app used</th><td class="blank"></td></tr>
+<tr><th>2FA method chosen</th><td class="blank">Authenticator app / Security key / SMS / Backup codes</td></tr>
+<tr><th>Tested sign-in with 2FA?</th><td class="blank">Yes / No</td></tr>
+<tr><th>Where recovery codes are stored</th><td class="blank"></td></tr>
+</table>
+
+<h2>Before you start</h2>
+<ul>
+<li><span class="checkbox">&#9744;</span> You can sign in to the account right now</li>
+<li><span class="checkbox">&#9744;</span> You have a phone or device for the authenticator app</li>
+<li><span class="checkbox">&#9744;</span> You have a pen and somewhere safe to write down recovery codes</li>
+<li><span class="checkbox">&#9744;</span> You know where the account&rsquo;s security or sign-in settings live</li>
+</ul>
+
+<h2>Step-by-step instructions</h2>
+<ol>
+<li><strong>Sign in to your account</strong> on the service&rsquo;s website or app.</li>
+<li><strong>Go to security settings.</strong> Look for &ldquo;Security,&rdquo; &ldquo;Sign-in &amp; security,&rdquo; &ldquo;Two-factor authentication,&rdquo; &ldquo;2FA,&rdquo; or &ldquo;MFA.&rdquo;</li>
+<li><strong>Turn on two-factor authentication.</strong> Choose &ldquo;Authenticator app&rdquo; when asked for the method (it is safer than SMS).</li>
+<li><strong>Add the account to your authenticator app.</strong> Scan the QR code on the screen, or type the setup key shown under &ldquo;Can&rsquo;t scan?&rdquo; into your app manually. If you write down the manual setup key, treat it like a password &mdash; anyone with it can generate your codes.</li>
+<li><strong>Verify it works.</strong> Your app will show a 6-digit code that changes every 30 seconds. Enter the current code on the service&rsquo;s website to finish setup.</li>
+<li><strong>Save your recovery codes.</strong> The service will show one-time recovery (backup) codes. Write them down or print them. They let you into your account if you lose your phone.</li>
+<li><strong>Test it.</strong> Sign out, then sign back in using a code from your authenticator app.</li>
+<li><strong>Mark it complete.</strong> Fill in the account information table above and file this worksheet with your records.</li>
+</ol>
+
+<h2>Recovery codes</h2>
+<p>Write your recovery codes here only if you have nowhere safer to store them. Prefer printing them and keeping the printout offline.</p>
+<p>
+<span class="fill-in"><input placeholder="Code 1"></span>
+<span class="fill-in"><input placeholder="Code 2"></span>
+<span class="fill-in"><input placeholder="Code 3"></span>
+<span class="fill-in"><input placeholder="Code 4"></span>
+</p>
+<p>
+<span class="fill-in"><input placeholder="Code 5"></span>
+<span class="fill-in"><input placeholder="Code 6"></span>
+<span class="fill-in"><input placeholder="Code 7"></span>
+<span class="fill-in"><input placeholder="Code 8"></span>
+</p>
+<p>
+<span class="fill-in"><input placeholder="Code 9"></span>
+<span class="fill-in"><input placeholder="Code 10"></span>
+</p>
+
+<h2>Completion</h2>
+<p><span class="fill-in"><input placeholder="Set up by"></span><span class="fill-in"><input placeholder="Date"></span></p>
+
+<div class="no-print">
+<p><a href="../index.html">Back to kit hub</a></p>
+</div>
+
+<footer>
+Created by Asdale Dynamics, LLC. Copyright (c) 2026 Asdale Dynamics, LLC.
+</footer>
+</div>
+</body>
+</html>

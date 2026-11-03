@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Authenticator App Comparison — Free 2FA Setup Kit</title>
+<style>
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #f5f7fa;
+  color: #1a202c;
+  line-height: 1.55;
+  margin: 0;
+  padding: 24px;
+}
+.page {
+  max-width: 980px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 32px 40px;
+}
+header {
+  border-bottom: 2px solid #cbd5e1;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+h1 {
+  font-size: 22px;
+  margin: 0 0 4px 0;
+  color: #0f172a;
+}
+.subtitle {
+  color: #475569;
+  font-size: 13px;
+  margin: 0;
+}
+h2 {
+  font-size: 17px;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  color: #0f172a;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 6px;
+}
+p {
+  margin: 0 0 12px 0;
+}
+ul {
+  margin: 6px 0 14px 0;
+  padding-left: 22px;
+}
+li {
+  margin-bottom: 6px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0 20px 0;
+  font-size: 12px;
+}
+th, td {
+  border: 1px solid #cbd5e1;
+  padding: 7px 9px;
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  background: #f1f5f9;
+  font-weight: 600;
+  color: #334155;
+}
+tr:nth-child(even) td {
+  background: #f8fafc;
+}
+.fill-in {
+  display: inline-block;
+  border-bottom: 1px solid #94a3b8;
+  min-width: 210px;
+  padding-bottom: 2px;
+  margin-right: 12px;
+}
+.fill-in input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font: inherit;
+  outline: none;
+}
+footer {
+  margin-top: 34px;
+  padding-top: 16px;
+  border-top: 1px solid #e2e8f0;
+  font-size: 12px;
+  color: #64748b;
+}
+.no-print {
+  margin-top: 26px;
+}
+@media print {
+  body {
+    background: #ffffff;
+    padding: 0;
+  }
+  .page {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    max-width: none;
+  }
+  header {
+    border-bottom: none;
+    padding-bottom: 8px;
+    margin-bottom: 18px;
+  }
+  .no-print {
+    display: none !important;
+  }
+  table, tr {
+    page-break-inside: avoid;
+  }
+  h2 {
+    page-break-after: avoid;
+  }
+  a {
+    color: #1a202c;
+    text-decoration: none;
+  }
+}
+</style>
+</head>
+<body>
+<div class="page">
+<header>
+<h1>Authenticator App Comparison</h1>
+<p class="subtitle">Pick the right authenticator app for your accounts &bull; Asdale Dynamics, LLC</p>
+</header>
+
+<p>Authenticator apps generate the 6-digit codes you use for two-factor authentication. All apps listed support time-based one-time passwords (TOTP), the standard behind most 2FA.</p>
+
+<h2>App comparison</h2>
+<table>
+<tr>
+<th style="width: 15%">App</th>
+<th style="width: 16%">Platforms</th>
+<th style="width: 10%">Open source</th>
+<th style="width: 10%">Cloud sync</th>
+<th style="width: 13%">Encrypted backup</th>
+<th style="width: 13%">App lock</th>
+<th style="width: 10%">Export codes</th>
+<th style="width: 11%">Account needed</th>
+<th style="width: 8%">Cost</th>
+<th>Best for</th>
+</tr>
+<tr><td>Google Authenticator</td><td>Android, iOS</td><td>No</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>No</td><td>Free</td><td>Simple, no-frills use</td></tr>
+<tr><td>Authy</td><td>Android, iOS, Desktop</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td><td>Yes (phone number)</td><td>Free</td><td>Syncing across many devices</td></tr>
+<tr><td>Microsoft Authenticator</td><td>Android, iOS</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td><td>Yes (Microsoft account)</td><td>Free</td><td>Microsoft ecosystem users</td></tr>
+<tr><td>2FAS</td><td>Android, iOS</td><td>Yes</td><td>Optional</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td><td>Free</td><td>Open source, simple backups</td></tr>
+<tr><td>Ente Auth</td><td>Android, iOS, Web, Desktop</td><td>Yes</td><td>Yes (end-to-end encrypted)</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td><td>Free / paid tiers</td><td>Privacy-focused syncing</td></tr>
+<tr><td>Aegis Authenticator</td><td>Android</td><td>Yes</td><td>No</td><td>Yes (local encrypted backup)</td><td>Yes</td><td>Yes</td><td>No</td><td>Free</td><td>Android users who want full control</td></tr>
+<tr><td>Bitwarden / Proton Pass</td><td>Android, iOS, Desktop</td><td>Partial</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Varies</td><td>Yes</td><td>Free / paid</td><td>One app for passwords and 2FA</td></tr>
+</table>
+
+<h2>How to choose</h2>
+<ul>
+<li><strong>Keep it simple:</strong> Google Authenticator or 2FAS &mdash; no account, works offline, codes stay on your device.</li>
+<li><strong>Sync across devices:</strong> Authy or Ente Auth &mdash; convenient if you use multiple devices, but protect your sync account well.</li>
+<li><strong>Already use a password manager:</strong> Bitwarden or Proton Pass can store 2FA codes alongside your passwords (one app, one place to back up &mdash; but also one place to lose).</li>
+</ul>
+
+<h2>Privacy reminders</h2>
+<ul>
+<li>Codes from an authenticator app work offline &mdash; no internet or phone signal needed.</li>
+<li>SMS-based 2FA is better than nothing, but SIM-swap attacks can intercept texts. An authenticator app or security key is safer.</li>
+<li>If an app syncs to the cloud, protect that account with its own strong password and 2FA.</li>
+<li>Export or back up your codes when you add new accounts, so a lost phone doesn&rsquo;t lock you out.</li>
+</ul>
+
+<div class="no-print">
+<p><a href="../index.html">Back to kit hub</a></p>
+</div>
+
+<footer>
+Created by Asdale Dynamics, LLC. Copyright (c) 2026 Asdale Dynamics, LLC.
+</footer>
+</div>
+</body>
+</html>
